@@ -11,6 +11,7 @@ import SwiftUI
 struct ProductivityApp: App {
     let persistenceController = PersistenceController.shared
     @State private var scrums = DailyScrum.data
+    @ObservedObject private var data = ScrumData()
 
     var body: some Scene
     {
@@ -18,7 +19,13 @@ struct ProductivityApp: App {
         {
             NavigationView
             {
-                ScrumsView(scrums: $scrums)
+                ScrumsView(scrums: $data.scrums )
+                {
+                    data.save()
+                }
+            }
+            .onAppear {
+                data.load()
             }
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
