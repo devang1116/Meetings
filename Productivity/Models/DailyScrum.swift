@@ -5,7 +5,6 @@
 //  Created by Devang Papinwar on 17/10/21.
 //
 
-import Foundation
 import SwiftUI
 
 struct DailyScrum: Identifiable, Codable {
@@ -41,7 +40,7 @@ extension DailyScrum {
         var title: String = ""
         var attendees: [String] = []
         var lengthInMinutes: Double = 5.0
-        var color: Color = .blue
+        var color: Color = .random
     }
 
     var data: Data {

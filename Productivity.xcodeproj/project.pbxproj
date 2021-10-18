@@ -13,6 +13,8 @@
 		DB0FBE49271D124A009EED68 /* ColorCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FBE48271D124A009EED68 /* ColorCodable.swift */; };
 		DB0FBE4B271D128E009EED68 /* ScrumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FBE4A271D128E009EED68 /* ScrumData.swift */; };
 		DB0FBE4D271D1822009EED68 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FBE4C271D1822009EED68 /* MeetingTimerView.swift */; };
+		DB7871B2271DA79C00B4FFB1 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7871B1271DA79C00B4FFB1 /* SpeechRecognizer.swift */; };
+		DB7871B6271DAA5E00B4FFB1 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7871B5271DAA5E00B4FFB1 /* HistoryView.swift */; };
 		DB9D6DA9271BDDD300F2CAF0 /* ProductivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DA8271BDDD300F2CAF0 /* ProductivityApp.swift */; };
 		DB9D6DAB271BDDD300F2CAF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DAA271BDDD300F2CAF0 /* ContentView.swift */; };
 		DB9D6DAD271BDDD500F2CAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9D6DAC271BDDD500F2CAF0 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		DB0FBE48271D124A009EED68 /* ColorCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodable.swift; sourceTree = "<group>"; };
 		DB0FBE4A271D128E009EED68 /* ScrumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumData.swift; sourceTree = "<group>"; };
 		DB0FBE4C271D1822009EED68 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		DB7871B1271DA79C00B4FFB1 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		DB7871B5271DAA5E00B4FFB1 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		DB9D6DA5271BDDD300F2CAF0 /* Productivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Productivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9D6DA8271BDDD300F2CAF0 /* ProductivityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityApp.swift; sourceTree = "<group>"; };
 		DB9D6DAA271BDDD300F2CAF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				DB0FBE46271D0EEE009EED68 /* History.swift */,
 				DB0FBE48271D124A009EED68 /* ColorCodable.swift */,
 				DB0FBE4A271D128E009EED68 /* ScrumData.swift */,
+				DB7871B1271DA79C00B4FFB1 /* SpeechRecognizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 				DB9D6DDD271BFDFE00F2CAF0 /* DetailView.swift */,
 				DB0FBE44271D0889009EED68 /* MeetingFooterView.swift */,
 				DB0FBE4C271D1822009EED68 /* MeetingTimerView.swift */,
+				DB7871B5271DAA5E00B4FFB1 /* HistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -323,12 +329,14 @@
 				DB9D6DDE271BFDFF00F2CAF0 /* DetailView.swift in Sources */,
 				DB0FBE47271D0EEE009EED68 /* History.swift in Sources */,
 				DB9D6DB2271BDDD500F2CAF0 /* Persistence.swift in Sources */,
+				DB7871B2271DA79C00B4FFB1 /* SpeechRecognizer.swift in Sources */,
 				DB9D6DAB271BDDD300F2CAF0 /* ContentView.swift in Sources */,
 				DB0FBE45271D0889009EED68 /* MeetingFooterView.swift in Sources */,
 				DB9D6DDC271BE68E00F2CAF0 /* ScrumsView.swift in Sources */,
 				DB9D6DA9271BDDD300F2CAF0 /* ProductivityApp.swift in Sources */,
 				DB0FBE43271D04D2009EED68 /* ScrumTimer.swift in Sources */,
 				DB0FBE49271D124A009EED68 /* ColorCodable.swift in Sources */,
+				DB7871B6271DAA5E00B4FFB1 /* HistoryView.swift in Sources */,
 				DBA4B482271C73670042CB0C /* MeetingHeaderView.swift in Sources */,
 				DB9D6DE2271C105E00F2CAF0 /* EditView.swift in Sources */,
 				DB9D6DDA271BE29800F2CAF0 /* CardView.swift in Sources */,
@@ -498,6 +506,8 @@
 				DEVELOPMENT_TEAM = S6QK8T6Z25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -528,6 +538,8 @@
 				DEVELOPMENT_TEAM = S6QK8T6Z25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

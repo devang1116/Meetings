@@ -38,6 +38,7 @@ class ScrumData : ObservableObject
                 #endif
                 return
             }
+            
             guard let dailyScrums = try? JSONDecoder().decode([DailyScrum].self, from: data) else {
                 fatalError("Can't decode saved scrum data.")
             }

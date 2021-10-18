@@ -7,9 +7,14 @@
 
 import SwiftUI
 
+
+
 struct MeetingView: View
 {
-    @Binding var scrum : DailyScrum
+    private let speech = SpeechRecognizer()
+    @Binding var scrum: DailyScrum
+    @State private var transcript = ""
+    @State private var isRecording = false
     @StateObject var scrumTimer = ScrumTimer()
     var body: some View
     {
@@ -17,31 +22,33 @@ struct MeetingView: View
         {
             RoundedRectangle(cornerRadius: 16.0)
                 .fill(scrum.color)
-            VStack
-            {
+            VStack {
                 MeetingHeaderView(secondsPassed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining)
-                Circle()
-                    .strokeBorder(lineWidth: 24, antialiased: true)
-                    .padding()
-                
+                MeetingTimerView(isRecording : isRecording ,speakers: scrumTimer.speakers, scrumColor: scrum.color)
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
         }
-        .accessibilityLabel(Text("Next speaker"))
         .padding()
-        .onAppear(perform: {
-            scrumTimer.reset(lengthInMinutes: scrumTimer.lengthInMinutes, attendees: scrum.attendees)
-                scrumTimer.startScrum()
-        })
-        
-        .onDisappear(perform: {
+        .foregroundColor(scrum.color.accessibleFontColor)
+        .onAppear {
+            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+            scrumTimer.speakerChangedAction = {
+                
+            }
+            speech.record(to: $transcript)
+            isRecording = true
+            scrumTimer.startScrum()
+        }
+        .onDisappear {
+            speech.stopRecording()
+            isRecording = false
             scrumTimer.stopScrum()
-            let history = History(attendees: scrum.attendees, lengthInMinutes: Int(scrum.lengthInMinutes) / 60)
-            scrum.history.insert(history , at : 0)
-        })
-        .padding()
+            let newHistory = History(attendees: scrum.attendees, lengthInMinutes: scrumTimer.secondsElapsed / 60 , transcript: transcript)
+            scrum.history.insert(newHistory, at: 0)
+        }
     }
 }
+
 
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
