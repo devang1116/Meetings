@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0FBE43271D04D2009EED68 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FBE42271D04D2009EED68 /* ScrumTimer.swift */; };
+		DB0FBE45271D0889009EED68 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FBE44271D0889009EED68 /* MeetingFooterView.swift */; };
+		DB0FBE47271D0EEE009EED68 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FBE46271D0EEE009EED68 /* History.swift */; };
 		DB9D6DA9271BDDD300F2CAF0 /* ProductivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DA8271BDDD300F2CAF0 /* ProductivityApp.swift */; };
 		DB9D6DAB271BDDD300F2CAF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DAA271BDDD300F2CAF0 /* ContentView.swift */; };
 		DB9D6DAD271BDDD500F2CAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9D6DAC271BDDD500F2CAF0 /* Assets.xcassets */; };
@@ -16,6 +19,13 @@
 		DB9D6DBF271BDDD500F2CAF0 /* ProductivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DBE271BDDD500F2CAF0 /* ProductivityTests.swift */; };
 		DB9D6DC9271BDDD500F2CAF0 /* ProductivityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DC8271BDDD500F2CAF0 /* ProductivityUITests.swift */; };
 		DB9D6DCB271BDDD500F2CAF0 /* ProductivityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DCA271BDDD500F2CAF0 /* ProductivityUITestsLaunchTests.swift */; };
+		DB9D6DD8271BE18300F2CAF0 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DD7271BE18300F2CAF0 /* DailyScrum.swift */; };
+		DB9D6DDA271BE29800F2CAF0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DD9271BE29800F2CAF0 /* CardView.swift */; };
+		DB9D6DDC271BE68E00F2CAF0 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DDB271BE68E00F2CAF0 /* ScrumsView.swift */; };
+		DB9D6DDE271BFDFF00F2CAF0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DDD271BFDFE00F2CAF0 /* DetailView.swift */; };
+		DB9D6DE0271C0A6200F2CAF0 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DDF271C0A6200F2CAF0 /* MeetingView.swift */; };
+		DB9D6DE2271C105E00F2CAF0 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D6DE1271C105E00F2CAF0 /* EditView.swift */; };
+		DBA4B482271C73670042CB0C /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA4B481271C73670042CB0C /* MeetingHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0FBE42271D04D2009EED68 /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
+		DB0FBE44271D0889009EED68 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
+		DB0FBE46271D0EEE009EED68 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		DB9D6DA5271BDDD300F2CAF0 /* Productivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Productivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9D6DA8271BDDD300F2CAF0 /* ProductivityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityApp.swift; sourceTree = "<group>"; };
 		DB9D6DAA271BDDD300F2CAF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +61,13 @@
 		DB9D6DC4271BDDD500F2CAF0 /* ProductivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductivityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9D6DC8271BDDD500F2CAF0 /* ProductivityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityUITests.swift; sourceTree = "<group>"; };
 		DB9D6DCA271BDDD500F2CAF0 /* ProductivityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB9D6DD7271BE18300F2CAF0 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		DB9D6DD9271BE29800F2CAF0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DB9D6DDB271BE68E00F2CAF0 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		DB9D6DDD271BFDFE00F2CAF0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DB9D6DDF271C0A6200F2CAF0 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
+		DB9D6DE1271C105E00F2CAF0 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		DBA4B481271C73670042CB0C /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +95,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB0FBE40271D0478009EED68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB9D6DD7271BE18300F2CAF0 /* DailyScrum.swift */,
+				DB0FBE42271D04D2009EED68 /* ScrumTimer.swift */,
+				DB0FBE46271D0EEE009EED68 /* History.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB0FBE41271D048D009EED68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB9D6DAA271BDDD300F2CAF0 /* ContentView.swift */,
+				DB9D6DDF271C0A6200F2CAF0 /* MeetingView.swift */,
+				DB9D6DE1271C105E00F2CAF0 /* EditView.swift */,
+				DB9D6DD9271BE29800F2CAF0 /* CardView.swift */,
+				DB9D6DDB271BE68E00F2CAF0 /* ScrumsView.swift */,
+				DBA4B481271C73670042CB0C /* MeetingHeaderView.swift */,
+				DB9D6DDD271BFDFE00F2CAF0 /* DetailView.swift */,
+				DB0FBE44271D0889009EED68 /* MeetingFooterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DB9D6D9C271BDDD300F2CAF0 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				DB9D6DA8271BDDD300F2CAF0 /* ProductivityApp.swift */,
-				DB9D6DAA271BDDD300F2CAF0 /* ContentView.swift */,
+				DB0FBE41271D048D009EED68 /* Views */,
+				DB0FBE40271D0478009EED68 /* Models */,
 				DB9D6DAC271BDDD500F2CAF0 /* Assets.xcassets */,
 				DB9D6DB1271BDDD500F2CAF0 /* Persistence.swift */,
 				DB9D6DB3271BDDD500F2CAF0 /* Productivity.xcdatamodeld */,
@@ -263,10 +309,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9D6DD8271BE18300F2CAF0 /* DailyScrum.swift in Sources */,
+				DB9D6DDE271BFDFF00F2CAF0 /* DetailView.swift in Sources */,
+				DB0FBE47271D0EEE009EED68 /* History.swift in Sources */,
 				DB9D6DB2271BDDD500F2CAF0 /* Persistence.swift in Sources */,
 				DB9D6DAB271BDDD300F2CAF0 /* ContentView.swift in Sources */,
+				DB0FBE45271D0889009EED68 /* MeetingFooterView.swift in Sources */,
+				DB9D6DDC271BE68E00F2CAF0 /* ScrumsView.swift in Sources */,
 				DB9D6DA9271BDDD300F2CAF0 /* ProductivityApp.swift in Sources */,
+				DB0FBE43271D04D2009EED68 /* ScrumTimer.swift in Sources */,
+				DBA4B482271C73670042CB0C /* MeetingHeaderView.swift in Sources */,
+				DB9D6DE2271C105E00F2CAF0 /* EditView.swift in Sources */,
+				DB9D6DDA271BE29800F2CAF0 /* CardView.swift in Sources */,
 				DB9D6DB5271BDDD500F2CAF0 /* Productivity.xcdatamodeld in Sources */,
+				DB9D6DE0271C0A6200F2CAF0 /* MeetingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
